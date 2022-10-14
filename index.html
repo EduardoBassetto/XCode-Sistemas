@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>XCode Sistemas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="./assets/JavaScript/script.js" defer></script>
+    <script src="./assets/JavaScript/efeitoCard.js" defer></script>
+    <script src="./assets/JavaScript/efeitoClientesRecentes.js" defer></script>
+    <script src="./assets/JavaScript/efeitoNavLateral.js" defer></script>
+    <script src="./assets/JavaScript/efeitoTrTable.js" defer></script>
+</head>
+
+
+<body onload="loadStatus()"> <!--funcao executada no script.js-->
+
+
+    <nav class="navLateral">
+        <a><img src="./assets/img/interactive 1.png" alt="logo xcode sistemas" /><p class="textoNavLateral">XCode Sistemas</p></a>
+        <a><img src="./assets/img/home 1.png" alt="botão painel" /><p class="textoNavLateral textoNavLateralSelecionado">Painel</p></a>
+        <a><img src="./assets/img/user 1.png" alt="botão clientes" /><p class="textoNavLateral">Clientes</p></a>
+        <a><img src="./assets/img/comment 1.png" alt="botão mensagens" /><p class="textoNavLateral">Mensagens</p></a>
+        <a><img src="./assets/img/interrogation 1.png" alt="botão ajuda" /><p class="textoNavLateral">Ajuda</p></a>
+        <a><img src="./assets/img/settings 1.png" alt="botão configurações" /><p class="textoNavLateral">Configurações</p></a>
+        <a><img src="./assets/img/lock 1.png" alt="botão senhao" /><p class="textoNavLateral">Senha</p></a>
+        <a><img src="./assets/img/sign-out-alt 1.png" alt="botão sair" /><p class="textoNavLateral">Sair</p></a>
+        <div class="efeitoSelecaoNavLateral"></div>
+    </nav>
+
+
+    <main>
+
+
+        <header>
+            <div class="menuHamburguerImg"></div>
+
+            <div class="menuBusca">
+                <label for="inputPesquisa"><img src="./assets/img/image 5.png" alt="Lupa de Pesquisa"></label>
+                <input id="inputPesquisa" type="text" placeholder="O que você procura?">
+            </div>
+
+            <div class="menuUsuario">
+                <img src="./assets/img/user.png" alt="imagem do usuário">
+            </div>
+        </header>
+
+
+
+        <section class="cards">
+
+            <div class="cardAcessos cardInfo cardJS">
+                <p class="numeroInfo numeroInfoJS">450</p>
+                <p class="textInfo textInfoJS">Acessos</p>
+                <img class="imgCardsJS" src="./assets/img/image 1.png">
+            </div>
+
+            <div class="cardVendas cardInfo cardJS">
+                <p class="numeroInfo numeroInfoJS">15</p>
+                <p class="textInfo textInfoJS">Vendas</p>
+                <img class="imgCardsJS" src="./assets/img/image 2.png">
+            </div>
+   
+            <div class="cardMensagens cardInfo cardJS">
+                <p class="numeroInfo numeroInfoJS">60</p>
+                <p class="textInfo textInfoJS">Mensagens</p>
+                <img class="imgCardsJS" src="./assets/img/image 3.png">
+            </div>
+
+            <div class="cardGanhos cardInfo cardJS">
+                <p class="numeroInfo numeroInfoJS">1.154,54</p>
+                <p class="textInfo textInfoJS">Ganhos</p>
+                <img class="imgCardsJS" src="./assets/img/image 4.png">
+            </div>
+
+        </section>
+
+
+
+
+        <section class="conjuntoRelatoriosEClientes">
+
+
+            <section class="relatorioCompras">
+                <div class="cabecalhoRelatorioCompras">
+                    <p class="tituloRelatorio">Relatório de compras</p>
+                    <button>Ver todos</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Valor</th>
+                            <th>Pagamento</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="trJS">
+                            <td>Smart TV OLED 55" LG</td>
+                            <td>R$150,00</td>
+                            <td>Pago</td>
+                            <td class="status">Entregue</td>
+                        </tr>
+                        <tr class="trJS">
+                            <td>Mouse Gamer Óptico USB</td>
+                            <td>R$450,00</td>
+                            <td>Vencido</td>
+                            <td class="status">Pendente</td>
+                        </tr>
+                        <tr class="trJS">
+                            <td>WebCam Logitech 3 MP</td>
+                            <td>R$50,00</td>
+                            <td>Pago</td>
+                            <td class="status">Estornado</td>
+                        </tr>
+                        <tr class="trJS">
+                            <td>Teclado Gamer HyperX Alloy</td>
+                            <td>R$550,45</td>
+                            <td>Pago</td>
+                            <td class="status">Processando</td>
+                        </tr>
+                        <tr class="trJS">
+                            <td>Monitor IPS 20" LG Full HD</td>
+                            <td>R$180,01</td>
+                            <td>Pago</td>
+                            <td class="status">Processando</td>
+                        </tr>
+                        <tr class="trJS">
+                            <td>Mesa Gamer Original</td>
+                            <td>R$258,45</td>
+                            <td>Vencido</td>
+                            <td class="status">Estornado</td>
+                        </tr>
+                        <tr class="trJS">
+                            <td>Cadeira gamer: ThunderX3 TGC12</td>
+                            <td>R$350,41</td>
+                            <td>Pago</td>
+                            <td class="status">Entregue</td>
+                        </tr>
+                        <tr class="trJS">
+                            <td>PC Dell XPSS-8940 Intel Core i7 10700</td>
+                            <td>R$750,54</td>
+                            <td>Vencido</td>
+                            <td class="status">Pendente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+
+
+            <section class="clientesRecentes">
+
+                <p class="tituloClientes">Clientes recentes</p>
+
+                <div class="clienteInfo clienteInfoJS">
+                    <img class="imgCLienteJS" src="./assets/img/User.png" alt="imagem do cliente">
+                    <div>
+                        <p class="nomeCliente nomeClienteJS">Naubi Conpert</p>
+                        <p class="numeroCliente numeroClienteJS">(48) 99999-9999</p>
+                    </div>
+                </div>
+
+                <div class="clienteInfo clienteInfoJS">
+                    <img class="imgCLienteJS" src="./assets/img/User.png" alt="imagem do cliente">
+                    <div>
+                        <p class="nomeCliente nomeClienteJS">Naubi Conpert</p>
+                        <p class="numeroCliente numeroClienteJS">(48) 99999-9999</p>
+                    </div>
+                </div>
+
+                <div class="clienteInfo clienteInfoJS">
+                    <img class="imgCLienteJS" src="./assets/img/User.png" alt="imagem do cliente">
+                    <div>
+                        <p class="nomeCliente nomeClienteJS">Naubi Conpert</p>
+                        <p class="numeroCliente numeroClienteJS">(48) 99999-9999</p>
+                    </div>
+                </div>
+
+                <div class="clienteInfo clienteInfoJS">
+                    <img class="imgCLienteJS" src="./assets/img/User.png" alt="imagem do cliente">
+                    <div>
+                        <p class="nomeCliente nomeClienteJS">Naubi Conpert</p>
+                        <p class="numeroCliente numeroClienteJS">(48) 99999-9999</p>
+                    </div>
+                </div>
+
+                <div class="clienteInfo clienteInfoJS">
+                    <img class="imgCLienteJS" src="./assets/img/User.png" alt="imagem do cliente">
+                    <div>
+                        <p class="nomeCliente nomeClienteJS">Naubi Conpert</p>
+                        <p class="numeroCliente numeroClienteJS">(48) 99999-9999</p>
+                    </div>
+                </div>
+            </section>
+
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>

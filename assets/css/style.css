@@ -1,0 +1,610 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+main {
+    margin-left: 100px;
+}
+
+
+
+/*Menu Lateral*/
+.navLateral {
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #3D9CF3;
+    justify-content: top;
+    align-items: center;
+    z-index: 10;
+}
+
+.navLateral a:first-of-type {
+    margin-bottom: 65px;
+    margin-top: 35px;
+
+}
+
+.navLateral a {
+    margin: 20px 20px 20px 40px;
+    z-index: 2;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    z-index: 11;
+}
+
+.textoNavLateral {
+    display: none;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 29px;
+    margin: 0 13px;
+}
+
+.navLateralAtivo {
+    width: 370px;
+    align-items: flex-start;
+}
+
+.textoNavLateralAtivo {
+    display: inline;
+}
+
+.textoNavLateralSelecionado {
+    color: #3D9CF3;
+}
+
+.efeitoSelecaoNavLateral {
+    background-image: url(../img/Vector\ 4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: -4px;
+    top: 100px;
+    width: 100px;
+    height: 150px;
+    z-index: 1;
+}
+
+.efeitoSelecaoNavLateralAtivo {
+    background-image: url(../img/Vector\ 7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    width: 360px;
+    height: 150px;
+    z-index: 10;
+}
+/*Fim Menu Lateral*/
+
+
+
+
+
+
+/*Header*/
+header {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin-top: 16px;
+}
+
+
+.menuHamburguerImg {
+    background-image: url(../img/image\ 7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    position: fixed;
+    cursor: pointer;
+}
+
+.menuHamburguerImgAtivo {
+    background-image: url(../img/Rectangle\ 12.png);
+    left: 300px;
+    top: 30px;
+    filter: invert(100%) drop-shadow(0px 0px 1px black);
+    border-radius: 80%;
+    z-index: 11;
+}
+
+.menuBusca {
+    width: 50%;
+    height: 50px;
+    border: 2px solid #E3E3E3;
+    background-color: #FCFCFC;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: calc(20% + 30px)
+}
+
+.menuBusca img {
+    margin: 15px;
+    cursor: pointer;
+}
+
+.menuBusca input {
+    border: none;
+    width: 90%;
+    height: 40px;
+    background-color: #ffffff00;
+    font-size: 1.1em;
+}
+
+.menuBusca input:focus {
+    outline: none;
+}
+
+.menuUsuario {
+    background-color: #D9D9D9;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuUsuario img {
+    color: black;
+    cursor: pointer;
+}
+
+/*Fim Header*/
+
+
+
+
+
+
+/*Cards informativos*/
+.cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    margin: 50px 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardInfo {
+    max-width: 350px;
+    min-width: fit-content;
+    width: 20vw;
+    height: fit-content;
+    padding: 20px;
+    margin: 15px 4px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    text-align: left;
+    justify-items: left;
+    align-items: center;
+
+    background: #FAFAFA;
+    box-shadow: 4px 4px 10px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    z-index: 2;
+}
+
+.numeroInfo {
+    grid-area: 1/1/1/1;
+
+    font-weight: 500;
+    font-size: 2.1em;
+    line-height: 44px;
+    color: #3D9CF3;
+    z-index: 1;
+}
+
+.textInfo {
+    grid-area: 2/1/2/1;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 20px;
+    color: #7D7D7D;
+    z-index: 1;
+}
+
+.cards img {
+    grid-area: 1/2/3/2;
+    height: 55px;
+    width: 55px;
+    justify-self: right;
+}
+
+/*Animacao cards*/
+
+.cardInfoAtivo {
+    background: #3D9CF3;
+}
+
+.numeroInfoJSAtivo {
+    color: #FFFFFF;
+}
+
+.textInfoJSAtivo {
+    color: #FFFFFF;
+}
+
+.imgCardsJSAtivo {
+    filter: invert(1) opacity(1);
+}
+
+/*Fim Cards informativos*/
+
+
+
+
+
+
+
+.conjuntoRelatoriosEClientes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+/*Section Relatório de Compras*/
+.relatorioCompras {
+    padding: 20px;
+    margin: 10px;
+    background: #FAFAFA;
+    box-shadow: 4px 4px 4px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 63vw;
+}
+
+.cabecalhoRelatorioCompras {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.cabecalhoRelatorioCompras button {
+    background: #3D9CF3;
+    border-radius: 11px;
+    padding: 16px;
+    width: 155px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.tituloRelatorio {
+    font-weight: 700;
+    font-size: 1.7em;
+    line-height: 34px;
+    color: #3D9CF3;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+.trJS {
+    border: 3px solid #fafafa;
+    border-radius: 2px;
+    line-height: 38px;
+    padding: 5px;
+
+}
+
+.trJSAtivo {
+    background-color: #3D9CF3;
+    border-radius: 2px;
+
+
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+    border-radius: 10px 0 0 10px;
+    padding-left: 10px;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+td:nth-child(3) {
+    border-radius: 0 10px 10px 0;
+}
+
+.statusEntregue {
+    background-color: #8DE02C;
+    border-radius: 10px;
+    color: #FFFFFF;
+
+}
+
+.statusPendente {
+    background: #F9CA3F;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.statusEstornado {
+    background: #FF0000;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.statusProcessando {
+    background: #1795CE;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+/*Fim Section Relatório de Compras*/
+
+
+
+
+/*Começo Clientes Recentes*/
+.clientesRecentes {
+    padding: 20px;
+    margin: 10px;
+    background: #FAFAFA;
+    box-shadow: 4px 4px 4px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.tituloClientes {
+    font-weight: 700;
+    font-size: 1.7em;
+    line-height: 34px;
+    color: #3D9CF3;
+    margin-bottom: 30px;
+
+}
+
+.clienteInfo {
+    display: flex;
+    flex-flow: row;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.clienteInfo img {
+    margin-right: 10px;
+}
+
+/*Animacao ao clicar*/
+.clienteInfoJSAtivo {
+    background-color: #3D9CF3;
+}
+
+.imgClienteJSAtivo {
+    transform: scale(1.15);
+}
+
+.nomeClienteJSAtivo {
+    color: #ffffff;
+}
+
+.numeroClienteJSAtivo {
+    color: #ffffff;
+}
+/*Fim Clientes Recentes*/
+
+
+
+
+
+
+@media only screen and (max-width: 1134px) {
+    .relatorioCompras {
+        width: 80vw;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 14px;
+    }
+
+    .relatorioCompras {
+        padding: 9px;
+        margin: 5px;
+        width: 100vw;
+    }
+
+    tr td:first-child {
+        min-width: 138px;
+    }
+
+    tr td:not(:first-child) {
+        max-width: 46px;
+    }
+
+    tr td:last-child {
+        font-size: 10px;
+    }
+
+    td:nth-child(2),
+    th:nth-child(2) {
+        display: none;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 606px) {
+    * {
+        font-size: 13px;
+    }
+   
+    main {
+        margin-left: 50px;
+    }
+
+    .navLateral {
+        width: 50px;
+    }
+
+    .navLateralAtivo {
+        width: 370px;
+        align-items: flex-start;
+    }
+
+    .navLateral a {
+        margin: 20px 20px 20px 20px;
+    }
+
+    .efeitoSelecaoNavLateral {
+        scale: 0.6;
+        right: -25px;
+    }
+
+    .efeitoSelecaoNavLateralAtivo {
+        scale: 1;
+        right: -1px;
+    }
+
+    .menuHamburguerImg {
+        left: 60px;
+    }
+
+    .menuHamburguerImgAtivo {
+        left: 300px;
+        top: 30px
+    }
+
+    .cardInfo img {
+        display: none;
+    }
+
+    .numeroInfo {
+        grid-area: 1/1/1/3;
+    }
+
+    .textInfo {
+        grid-area: 2/1/2/3;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 498px) {
+    * {
+        font-size: 12px;
+    }
+
+
+    td:nth-child(3),
+    th:nth-child(3) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media only screen and (max-width: 768px) {
+    main {
+        margin-left: 75px;
+        font-size: 14px;
+    }
+
+    .navLateral {
+      
+    }
+
+    .navLateral img {
+        transform: scale(0.8);
+    }
+
+    #efeitoSelecaoNavLateral {
+        right: -1px;
+        transform: scale(0.8);
+    }
+
+    .menuHamburguer img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .cardInfo img {
+        transform: scale(0.8);
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    main {
+        margin-left: 0px;
+        font-size: 14px;
+    }
+
+    .navLateral {
+        display: none;
+    }
+
+    .navLateral img {
+        transform: scale(0.8);
+    }
+
+    #efeitoSelecaoNavLateral {
+        right: -1px;
+        transform: scale(0.8);
+    }
+
+    .menuHamburguer img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .cardInfo img {
+        transform: scale(0.8);
+    }
+
+    .relatorioCompras {
+        width: 96vw;
+    }
+}*/
